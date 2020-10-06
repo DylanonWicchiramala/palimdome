@@ -6,11 +6,11 @@ class palimdome {
         Scanner s = new Scanner(System.in);
         long inp = s.nextLong();
 
-        System.out.println("revert num of "+inp+" is "+revert(inp));
+        System.out.println("revert num of " + inp + " is " + revert(inp));
         System.out.println();
-        System.out.println("palimdome of "+inp+" is "+palimdome(inp));
+        System.out.println("palimdome of " + inp + " is " + NotClassPalimdome(inp));
         System.out.println();
-        System.out.println(inp+" have "+m(inp)+" หลัก");
+        System.out.println(inp + " have " + m(inp) + " หลัก");
     }
 
     public static long revert(long minp) {
@@ -28,7 +28,7 @@ class palimdome {
         return out / 10;
     }
 
-    public static long palimdome(long minp) {
+    public static long NotClassPalimdome(long minp) {
         if(errChk(minp) != 0){
             errChk(minp);
             return -1;
